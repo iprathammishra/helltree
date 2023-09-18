@@ -1,2 +1,3 @@
-# helltree
-file and directory tree, simplified and visualized 
+# Helltree 💀
+
+Create tree structure of your workspace in just one click. 
