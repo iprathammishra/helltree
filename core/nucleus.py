@@ -1,14 +1,17 @@
+# └─ ├─ │
 
 class Tree:
     def __init__(self, f_list: list) -> None:
         self.f_list = f_list
 
-    def __display__(self, name):
-        print()
-        for file in self.f_list:
-            print(file[file.find(name.split('/')[-1]):])
+    def make(self, root) -> None:
+        paths = [
+            file[file.find(root.split('/')[-1]):]
+            for file in self.f_list
+        ]
 
 
 def cloud(mlist: list, root: str) -> None:
+    print("\nRoot")
     hell = Tree(mlist)
-    hell.__display__(root)
+    hell.make(root)
