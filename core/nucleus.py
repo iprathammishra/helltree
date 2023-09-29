@@ -9,6 +9,9 @@ class Tree:
             file[file.find(root.split('/')[-1]):]
             for file in self.f_list
         ]
+        paths.reverse()
+        for path in paths:
+            print(path)
 
 
 def cloud(mlist: list, root: str) -> None:
